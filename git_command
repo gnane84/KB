@@ -8,6 +8,10 @@ Verifying the installation
 Configuring the username and email ID
  git config --global user.name "Username"
  git config --global user.email "Email"
+ 
+Credential save http credential for short time
+ git config --global credential.helper 'store'
+ git config --global credential.helper cache --timeout=3600
 
 Innitialize repo
  git init
@@ -145,9 +149,6 @@ Change the default branch
  git push --set-upstream origin <branchname>
  
  
- credential stave http
- 
- git config --global credential.helper 'store'
-git config --global credential.helper cache --timeout=3600
+
  
  
